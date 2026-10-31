@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-title-en="Terms of Service — Men's Log" data-title-ru="Условия использования — Men's Log">Terms of Service — Men's Log</title>
+  
+  <meta name="description" content="Terms of Service for Men's Log (com.app.menscalendar). Personal wellness and cycle tracking application.">
+  <meta name="theme-color" content="#0a0e17">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/app-icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/app-icon-192.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <script>
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var lang = params.get('lang') || localStorage.getItem('menslog_lang') || 'en';
+        if (lang === 'ru' || lang === 'en') {
+          document.documentElement.setAttribute('lang', lang);
+          document.addEventListener('DOMContentLoaded', function() {
+            document.body.setAttribute('data-lang', lang);
+          });
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body data-lang="en">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/app-icon.png" alt="Men's Log App Icon" class="brand-icon">
+        <span class="brand-title">Men's Log</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link">
+              <span class="lang-en">Home</span>
+              <span class="lang-ru">Главная</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#features" class="nav-link">
+              <span class="lang-en">Features</span>
+              <span class="lang-ru">Возможности</span>
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" class="nav-link">
+              <span class="lang-en">Privacy Policy</span>
+              <span class="lang-ru">Конфиденциальность</span>
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" class="nav-link active">
+              <span class="lang-en">Terms</span>
+              <span class="lang-ru">Условия</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button type="button" class="lang-btn active" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="ru" aria-pressed="false">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Content -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-header">
+        <h1 class="hero-title" style="font-size: 2.4rem; margin-bottom: 12px;">
+          <span class="lang-en">Terms of Service</span>
+          <span class="lang-ru">Условия использования</span>
+        </h1>
+        <div class="legal-meta">
+          <div class="legal-meta-item">
+            <strong>Application:</strong> Men's Log (<code class="code-badge">com.app.menscalendar</code>)
+          </div>
+          <div class="legal-meta-item">
+            <strong>Effective Date:</strong> October 2026
+          </div>
+          <div class="legal-meta-item">
+            <strong>Governing Principle:</strong> Local-First Privacy
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-content">
+        <!-- Table of Contents -->
+        <aside class="legal-toc">
+          <div class="legal-toc-title">
+            <span class="lang-en">Contents</span>
+            <span class="lang-ru">Разделы</span>
+          </div>
+          <ul class="toc-list">
+            <li><a href="#acceptance"><span class="lang-en">1. Acceptance of Terms</span><span class="lang-ru">1. Принятие условий</span></a></li>
+            <li><a href="#description"><span class="lang-en">2. Description of Service</span><span class="lang-ru">2. Описание приложения</span></a></li>
+            <li><a href="#privacy-integration"><span class="lang-en">3. Privacy &amp; Google Drive</span><span class="lang-ru">3. Приватность и Google Drive</span></a></li>
+            <li><a href="#user-responsibilities"><span class="lang-en">4. User Responsibilities</span><span class="lang-ru">4. Ответственность пользователя</span></a></li>
+            <li><a href="#health-disclaimer"><span class="lang-en">5. Health &amp; Medical Disclaimer</span><span class="lang-ru">5. Медицинский отказ</span></a></li>
+            <li><a href="#intellectual-property"><span class="lang-en">6. Intellectual Property</span><span class="lang-ru">6. Интеллектуальная собственность</span></a></li>
+            <li><a href="#warranty-disclaimer"><span class="lang-en">7. Disclaimer of Warranties</span><span class="lang-ru">7. Отказ от гарантий</span></a></li>
+            <li><a href="#liability"><span class="lang-en">8. Limitation of Liability</span><span class="lang-ru">8. Ограничение ответственности</span></a></li>
+            <li><a href="#termination"><span class="lang-en">9. Termination &amp; Revocation</span><span class="lang-ru">9. Прекращение использования</span></a></li>
+            <li><a href="#contact"><span class="lang-en">10. Contact Information</span><span class="lang-ru">10. Контактная информация</span></a></li>
+          </ul>
+        </aside>
+
+        <!-- Body -->
+        <div class="legal-body">
+
+          <!-- Section 1 -->
+          <section id="acceptance">
+            <h2>
+              <span class="lang-en">1. Acceptance of Terms</span>
+              <span class="lang-ru">1. Принятие условий использования</span>
+            </h2>
+            <p class="lang-en">
+              Welcome to <strong>Men's Log</strong> (referred to as "the Application", "we", "us", or "our", package name <code class="code-badge">com.app.menscalendar</code>). By downloading, installing, accessing, or using Men's Log, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not download, install, or use the Application.
+            </p>
+            <p class="lang-ru">
+              Добро пожаловать в <strong>Men's Log</strong> (далее «Приложение», пакет <code class="code-badge">com.app.menscalendar</code>). Скачивая, устанавливая или используя Men's Log, вы подтверждаете согласие с настоящими Условиями использования («Условия»). Если вы не согласны с настоящими Условиями, пожалуйста, не устанавливайте и не используйте Приложение.
+            </p>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="description">
+            <h2>
+              <span class="lang-en">2. Description of Application</span>
+              <span class="lang-ru">2. Описание сервиса и приложения</span>
+            </h2>
+            <p class="lang-en">
+              Men's Log is an offline-capable, local-first personal calendar and wellness journal designed for discreet tracking of relationship milestones, cycle observations, and personal notes. The Application features hardware-backed cryptographic security (SQLCipher AES-256) and optional encrypted backup synchronization directly to your private Google Drive application container (<code class="code-badge">appDataFolder</code>).
+            </p>
+            <p class="lang-ru">
+              Men's Log — автономное локальное приложение-календарь и журнал самочувствия, разработанное для конфиденциального учёта дат отношений, фаз циклов и персональных заметок. Приложение использует аппаратное шифрование (SQLCipher AES-256) и опциональную синхронизацию зашифрованных резервных копий напрямую в изолированную скрытую папку вашего Google Drive (<code class="code-badge">appDataFolder</code>).
+            </p>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="privacy-integration">
+            <h2>
+              <span class="lang-en">3. Privacy Policy &amp; Google Drive Integration</span>
+              <span class="lang-ru">3. Политика конфиденциальности и Google Drive</span>
+            </h2>
+            <p class="lang-en">
+              Your privacy is fundamental to our software design. Our handling of information is governed by our <a href="privacy.html"><strong>Privacy Policy</strong></a>, which is incorporated by reference into these Terms.
+            </p>
+            <p class="lang-ru">
+              Защита ваших данных — основополагающий принцип нашей разработки. Обработка данных регламентируется <a href="privacy.html"><strong>Политикой конфиденциальности</strong></a>, являющейся неотъемлемой частью настоящих Условий.
+            </p>
+            <p class="lang-en">
+              When utilizing Google Drive cloud sync:
+            </p>
+            <p class="lang-ru">
+              При использовании облачной синхронизации Google Drive:
+            </p>
+            <ul class="lang-en">
+              <li>The Application connects to Google APIs using the limited scope <code class="code-badge">https://www.googleapis.com/auth/drive.appdata</code>.</li>
+              <li>The Application does NOT access, read, or modify any other files, documents, or photos in your Google Drive.</li>
+              <li>Data transfer and usage strictly adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+            </ul>
+            <ul class="lang-ru">
+              <li>Приложение подключается к Google API с использованием строго ограниченной области <code class="code-badge">https://www.googleapis.com/auth/drive.appdata</code>.</li>
+              <li>Приложение НЕ имеет доступа к другим вашим документам, фото или файлам на Google Диске.</li>
+              <li>Передача и использование данных строго соответствуют требованиям <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a> (Limited Use).</li>
+            </ul>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="user-responsibilities">
+            <h2>
+              <span class="lang-en">4. User Responsibilities &amp; Device Security</span>
+              <span class="lang-ru">4. Обязанности пользователя и безопасность устройства</span>
+            </h2>
+            <p class="lang-en">
+              Because Men's Log operates on a zero-knowledge, local-first paradigm:
+            </p>
+            <p class="lang-ru">
+              Поскольку Men's Log работает по принципу локального хранения с нулевым разглашением:
+            </p>
+            <ul class="lang-en">
+              <li><strong>Device Protection:</strong> You are responsible for securing physical access to your device (using biometrics, PIN, password, or pattern locks).</li>
+              <li><strong>Google Account Credentials:</strong> You are solely responsible for maintaining the confidentiality and security of the Google Account credentials used for backup.</li>
+              <li><strong>Backup Maintenance:</strong> While Men's Log provides automatic or manual backup mechanisms, you are responsible for maintaining regular backups to avoid data loss in the event of device damage, loss, or factory reset.</li>
+            </ul>
+            <ul class="lang-ru">
+              <li><strong>Защита смартфона:</strong> вы несёте ответственность за ограничение физического доступа к своему устройству (с помощью биометрии, PIN-кода или пароля).</li>
+              <li><strong>Учётная запись Google:</strong> вы несёте единоличную ответственность за безопасность доступа к своему Google Аккаунту, используемому для бэкапа.</li>
+              <li><strong>Резервные копии:</strong> регулярное создание резервных копий обеспечивает сохранность ваших данных при смене устройства или аппаратном сбросе.</li>
+            </ul>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="health-disclaimer">
+            <h2>
+              <span class="lang-en">5. Health &amp; Medical Disclaimer</span>
+              <span class="lang-ru">5. Медицинский отказ от ответственности</span>
+            </h2>
+            <div class="legal-box warning">
+              <div class="legal-box-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                <span class="lang-en">Informational &amp; Journaling Purpose Only</span>
+                <span class="lang-ru">Исключительно информационное назначение</span>
+              </div>
+              <p class="lang-en" style="margin-bottom: 0;">
+                Men's Log is designed strictly as a personal organizational tool and wellness journal. <strong>The Application is not a medical device, diagnostic system, clinical tool, or contraceptive method.</strong> It does not provide medical, diagnostic, or clinical advice. Always consult a qualified healthcare professional regarding any medical concerns, symptoms, or reproductive health decisions.
+              </p>
+              <p class="lang-ru" style="margin-bottom: 0;">
+                Men's Log предназначен исключительно для персонального планирования и ведения личных записей. <strong>Приложение не является медицинским изделием, диагностическим инструментом или средством контрацепции.</strong> Приложение не даёт медицинских рекомендаций. По любым вопросам здоровья всегда консультируйтесь с квалифицированными врачами.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="intellectual-property">
+            <h2>
+              <span class="lang-en">6. Intellectual Property &amp; User Ownership</span>
+              <span class="lang-ru">6. Права на интеллектуальную собственность</span>
+            </h2>
+            <p class="lang-en">
+              <strong>Your Content:</strong> You retain 100% ownership and intellectual property rights in all data, calendar logs, and notes entered into Men's Log. We claim zero rights to your content.
+            </p>
+            <p class="lang-ru">
+              <strong>Ваши данные:</strong> вы сохраняете 100% прав на всю информацию, записи и заметки, введённые в Men's Log. Мы не претендуем ни на какие права на ваш контент.
+            </p>
+            <p class="lang-en">
+              <strong>Application Assets:</strong> The code, UI designs, icons, logos, and documentation of Men's Log are protected by copyright, trademark, and intellectual property laws. You may not decompile, reverse-engineer, or distribute malicious derivatives of the software.
+            </p>
+            <p class="lang-ru">
+              <strong>Ресурсы приложения:</strong> программный код, дизайн интерфейса, иконки, логотип и сопроводительная документация Men's Log защищены законодательством об интеллектуальной собственности. Запрещается декомпиляция и создание вредоносных модификаций.
+            </p>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="warranty-disclaimer">
+            <h2>
+              <span class="lang-en">7. Disclaimer of Warranties</span>
+              <span class="lang-ru">7. Отказ от гарантийных обязательств</span>
+            </h2>
+            <p class="lang-en">
+              MEN'S LOG IS PROVIDED TO YOU "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND DEFECTS, WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, THE DEVELOPER EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+            </p>
+            <p class="lang-ru">
+              ПРИЛОЖЕНИЕ MEN'S LOG ПРЕДОСТАВЛЯЕТСЯ НА УСЛОВИЯХ «КАК ЕСТЬ» (AS IS) И «ПО МЕРЕ ДОСТУПНОСТИ» (AS AVAILABLE), СО ВСЕМИ ВОЗМОЖНЫМИ НЕДОЧЁТАМИ. В МАКСИМАЛЬНОЙ СТЕПЕНИ, ДОПУСКАЕМОЙ ЗАКОНОМ, РАЗРАБОТЧИК ОТКАЗЫВАЕТСЯ ОТ ЛЮБЫХ ПРЯМЫХ ИЛИ КОСВЕННЫХ ГАРАНТИЙ, ВКЛЮЧАЯ ГАРАНТИИ ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЁННОЙ ЦЕЛИ ИЛИ БЕСПЕРЕБОЙНОЙ РАБОТЫ.
+            </p>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="liability">
+            <h2>
+              <span class="lang-en">8. Limitation of Liability</span>
+              <span class="lang-ru">8. Ограничение ответственности</span>
+            </h2>
+            <p class="lang-en">
+              TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES (INCLUDING LOSS OF DATA, LOSS OF DEVICE ACCESS, OR BUSINESS INTERRUPTION) ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APPLICATION.
+            </p>
+            <p class="lang-ru">
+              В МАКСИМАЛЬНОЙ СТЕПЕНИ, ДОПУСКАЕМОЙ ПРИМЕНИМЫМ ЗАКОНОДАТЕЛЬСТВОМ, РАЗРАБОТЧИК НЕ НЕСЁТ ОТВЕТСТВЕННОСТИ ЗА ЛЮБЫЕ КОСВЕННЫЕ, СЛУЧАЙНЫЕ ИЛИ ПОСЛЕДУЮЩИЕ УБЫТКИ (ВКЛЮЧАЯ ПОТЕРЮ ДАННЫХ ИЛИ УТРАТУ ДОСТУПА К УСТРОЙСТВУ), ВОЗНИКШИЕ В СВЯЗИ С ИСПОЛЬЗОВАНИЕМ ПРИЛОЖЕНИЯ.
+            </p>
+          </section>
+
+          <!-- Section 9 -->
+          <section id="termination">
+            <h2>
+              <span class="lang-en">9. Termination &amp; Revocation of Permissions</span>
+              <span class="lang-ru">9. Прекращение действия соглашения</span>
+            </h2>
+            <p class="lang-en">
+              You may terminate these Terms at any time simply by uninstalling Men's Log and revoking Google OAuth access via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account Permissions</a>. All local cryptographic keys are destroyed upon app deletion.
+            </p>
+            <p class="lang-ru">
+              Вы можете прекратить действие настоящих Условий в любой момент, просто удалив Men's Log со своего устройства и отозвав доступ Google OAuth через <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Настройки Google Аккаунта</a>. При удалении приложения все локальные криптографические ключи уничтожаются.
+            </p>
+          </section>
+
+          <!-- Section 10 -->
+          <section id="contact">
+            <h2>
+              <span class="lang-en">10. Contact Information</span>
+              <span class="lang-ru">10. Контактная информация</span>
+            </h2>
+            <p class="lang-en">
+              If you have any questions or feedback regarding these Terms of Service, please reach out via email:
+            </p>
+            <p class="lang-ru">
+              Если у вас есть вопросы относительно настоящих Условий использования, свяжитесь с нами по электронной почте:
+            </p>
+
+            <div class="legal-box">
+              <!-- Замените на ваш Support Email из Google Cloud OAuth Consent Screen -->
+              <div style="font-size: 1.05rem; font-weight: 600;">
+                Email: <a href="mailto:menslog.app.support@gmail.com">menslog.app.support@gmail.com</a>
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
+                Application: Men's Log • Package: com.app.menscalendar
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="assets/app-icon.png" alt="Men's Log Icon" class="brand-icon">
+            <span class="brand-title">Men's Log</span>
+          </a>
+          <p class="footer-desc">
+            <span class="lang-en">Personal, discreet, and hardware-encrypted wellness and cycle logging companion.</span>
+            <span class="lang-ru">Персональный, конфиденциальный и аппаратно защищённый дневник мужского здоровья.</span>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>
+            <span class="lang-en">Navigation</span>
+            <span class="lang-ru">Навигация</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ru">Главная</span></a></li>
+            <li><a href="index.html#features"><span class="lang-en">Features</span><span class="lang-ru">Возможности</span></a></li>
+            <li><a href="privacy.html"><span class="lang-en">Privacy Policy</span><span class="lang-ru">Политика конфиденциальности</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>
+            <span class="lang-en">Legal &amp; Support</span>
+            <span class="lang-ru">Документы</span>
+          </h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html"><span class="lang-en">Privacy Policy</span><span class="lang-ru">Политика конфиденциальности</span></a></li>
+            <li><a href="terms.html" style="color: var(--accent-blue);"><span class="lang-en">Terms of Service</span><span class="lang-ru">Условия использования</span></a></li>
+            <!-- Замените на ваш Support Email из Google Cloud OAuth Consent Screen -->
+            <li><a href="mailto:menslog.app.support@gmail.com">menslog.app.support@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Men's Log. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html"><span class="lang-en">Privacy</span><span class="lang-ru">Конфиденциальность</span></a>
+          <a href="terms.html"><span class="lang-en">Terms</span><span class="lang-ru">Условия</span></a>
+          <a href="#top">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
